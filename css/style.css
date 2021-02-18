@@ -19,7 +19,7 @@ body {
     display: grid;
     grid-template-rows: 100vh 100vh 100vh 100vh 100vh;
     font-family: 'Formula Condensed';
-    font-size: 50pt;
+    font-size: 8vw;
     letter-spacing: 2.1px;
 }
 
@@ -88,9 +88,4 @@ body {
     -moz-transition: all 2.5s ease;
     -o-transition: all 2.5s ease;
     transition: all .5s ease; */
-}
-
-.bolded {
-    font-weight: normal;
-    font-size: 30pt;
 }
