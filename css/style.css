@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
             url("fonts/FormulaCondensed-Regular.woff") format("woff"),
             url("fonts/FormulaCondensed-Regular.woff2") format("woff2"),
             url("fonts/FormulaCondensed-Regular.ttf") format("truetype"),
-            url("fonts/FormulaCondensed-Regular.eot") format("embedded-opentype"),
+            url("fonts/FormulaCondensed-Regular.eot") format("embedded-opentype");
 }
 
 @font-face {
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
             url("fonts/FormulaCondensed-Bold.woff") format("woff"),
             url("fonts/FormulaCondensed-Bold.woff2") format("woff2"),
             url("fonts/FormulaCondensed-Bold.ttf") format("truetype"),
-            url("fonts/FormulaCondensed-Bold.eot") format("embedded-opentype"),
+            url("fonts/FormulaCondensed-Bold.eot") format("embedded-opentype");
 }
 
 body {
