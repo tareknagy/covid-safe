@@ -1,0 +1,96 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Formula Condensed';
+    src:    url("/fonts/FormulaCondensed-Regular.woff") format("woff"),
+            url("/fonts/FormulaCondensed-Regular.woff2") format("woff2"),
+}
+
+@font-face {
+    font-family: 'Formula Condensed';
+    font-weight: bold;
+    src:    url("/fonts/FormulaCondensed-Bold.woff") format("woff"),
+            url("/fonts/FormulaCondensed-Bold.woff2") format("woff2"),
+}
+
+body {
+    display: grid;
+    grid-template-rows: 100vh 100vh 100vh 100vh 100vh;
+    font-family: 'Formula Condensed';
+    font-size: 50pt;
+    letter-spacing: 2.1px;
+}
+
+.landing {
+    grid-row: 1 / 2;
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+}
+
+.v2 {
+    grid-row: 2 / 3;
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    background-color: aqua;   
+}
+
+.v3 {
+    grid-row: 3 / 4;
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    background-color: coral;   
+}
+
+.v4 {
+    grid-row: 4 / 5;
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    background-color: moccasin;   
+}
+
+.v5 {
+    grid-row: 5 / 6;
+    display: flex;   
+    justify-content: center;
+    align-items: center; 
+    background-color: aqua;   
+}
+
+#title-banner {
+    display: flex;
+}
+
+.title-banner-letters {
+    font-style: bold;
+    cursor: default;
+    margin: 0;
+    font-feature-settings: normal;
+    /* -webkit-transition: all 2.5s ease;
+    -moz-transition: all 2.5s ease;
+    -o-transition: all 2.5s ease;
+    transition: all .5s ease; */
+}
+
+.title-banner-letters-end {
+    font-style: bold;
+    cursor: default;
+}
+
+.title-banner-hover {
+    font-feature-settings: "salt";
+    /* -webkit-transition: all 2.5s ease;
+    -moz-transition: all 2.5s ease;
+    -o-transition: all 2.5s ease;
+    transition: all .5s ease; */
+}
+
+.bolded {
+    font-weight: normal;
+    font-size: 30pt;
+}
