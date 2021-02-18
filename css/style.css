@@ -2,22 +2,28 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 { /*reset for mobile browsers */
+    font-weight: normal;
+}
+
 @font-face {
     font-family: 'Formula Condensed';
-    src:    url("fonts/FormulaCondensed-Regular.woff") format("woff"),
+    font-style: normal;
+    font-weight: normal;
+    src:    url("fonts/FormulaCondensed-Regular.otf") format("opentype"),
+            url("fonts/FormulaCondensed-Regular.woff") format("woff"),
             url("fonts/FormulaCondensed-Regular.woff2") format("woff2"),
             url("fonts/FormulaCondensed-Regular.ttf") format("truetype"),
-            url("fonts/FormulaCondensed-Regular.otf") format("opentype"),
             url("fonts/FormulaCondensed-Regular.eot") format("embedded-opentype"),
 }
 
 @font-face {
     font-family: 'Formula Condensed';
     font-weight: bold;
-    src:    url("fonts/FormulaCondensed-Bold.woff") format("woff"),
+    src:    url("fonts/FormulaCondensed-Bold.otf") format("opentype"),
+            url("fonts/FormulaCondensed-Bold.woff") format("woff"),
             url("fonts/FormulaCondensed-Bold.woff2") format("woff2"),
             url("fonts/FormulaCondensed-Bold.ttf") format("truetype"),
-            url("fonts/FormulaCondensed-Bold.otf") format("opentype"),
             url("fonts/FormulaCondensed-Bold.eot") format("embedded-opentype"),
 }
 
