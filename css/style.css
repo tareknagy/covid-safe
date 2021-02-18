@@ -6,6 +6,8 @@
     font-family: 'Formula Condensed';
     src:    url("/fonts/FormulaCondensed-Regular.woff") format("woff"),
             url("/fonts/FormulaCondensed-Regular.woff2") format("woff2"),
+            url("/fonts/FormulaCondensed-Regular.ttf") format("truetype"),
+            url("/fonts/FormulaCondensed-Regular.eot") format("embedded-opentype"),
 }
 
 @font-face {
@@ -13,6 +15,8 @@
     font-weight: bold;
     src:    url("/fonts/FormulaCondensed-Bold.woff") format("woff"),
             url("/fonts/FormulaCondensed-Bold.woff2") format("woff2"),
+            url("/fonts/FormulaCondensed-Bold.ttf") format("truetype"),
+            url("/fonts/FormulaCondensed-Bold.eot") format("embedded-opentype"),
 }
 
 body {
