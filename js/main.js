@@ -25,9 +25,8 @@ $('#title-banner').hover(
 
 function startAnimation() {
 expandingLetters = setInterval(function() {
-    // console.log('yup')
     var letters = $('.title-banner-letters')
-    // adds random new letter to back of array;
+    // random idx for letter
     var randomLetter = Math.floor(Math.random() * $('.title-banner-letters').length);
     for (i = 0; i < letters.length; i++) {
         // if i is in randomLetters, add, else remove.
