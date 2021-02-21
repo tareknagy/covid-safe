@@ -39,6 +39,17 @@ h1, h2, h3, h4, h5, h6 { /* reset */
 
 @font-face {
     font-family: 'Telegraf';
+    font-weight: bolder;
+    src:    url("fonts/Telegraf-UltraBold.otf") format("opentype"),
+            url("fonts/Telegraf-UltraBold.woff") format("woff"),
+            url("fonts/Telegraf-UltraBold.woff2") format("woff2"),
+            url("fonts/Telegraf-UltraBold.ttf") format("truetype"),
+            url("fonts/Telegraf-UltraBold.eot") format("embedded-opentype");
+}
+
+
+@font-face {
+    font-family: 'Telegraf';
     font-weight: normal;
     src:    url("fonts/Telegraf-Regular.otf") format("opentype"),
             url("fonts/Telegraf-Regular.woff") format("woff"),
@@ -49,11 +60,12 @@ h1, h2, h3, h4, h5, h6 { /* reset */
 
 body {
     display: grid;
-    grid-template-rows: 100vh auto auto 100vh 100vh;
+    grid-template-rows: 100vh auto auto auto 100vh;
     grid-template-columns: 10px 1fr 2fr 1fr 10px;
     font-family: 'Formula Condensed';
     font-size: 8vw;
     letter-spacing: 2.1px; 
+    background-color: black;
     transition: background-color 0.5s ease;
 }
 
@@ -87,11 +99,12 @@ body {
 
 #v4 {
     grid-row: 4 / 5;
-    grid-column: span 3;
+    grid-column: 2 / 5;
     display: flex;   
     justify-content: center;
-    align-items: center; 
-    background-color: moccasin;   
+    padding: 20px;
+    align-items: flex-start; 
+    background-color: #fee6e6;   
 }
 
 #v5 {
@@ -106,6 +119,7 @@ body {
 #title-banner {
     display: flex;
     font-family: 'Formula Condensed';
+    color: white;
 }
 
 .title-banner-letters {
@@ -179,11 +193,22 @@ body {
     font-feature-settings: "salt";
 }
 
+.section-heading {
+    font-size: 6vw;
+    font-family: 'Telegraf';
+    font-weight: bolder;
+}
+
+.section-copy {
+    font-size: 6vw;
+    font-family: 'Telegraf';
+    font-weight: normal;
+}
 
 .bg-transition {
-    background-color: black;   
+    background-color: white;   
 }
 
 .is-not-inview {
-    background-color: white;   
+    background-color: black;   
 }
