@@ -49,40 +49,43 @@ h1, h2, h3, h4, h5, h6 { /* reset */
 
 body {
     display: grid;
-    grid-template-rows: 100vh 100vh 100vh 100vh 100vh;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 100vh auto auto 100vh 100vh;
+    grid-template-columns: 10px 1fr 2fr 1fr 10px;
     font-family: 'Formula Condensed';
     font-size: 8vw;
-    letter-spacing: 2.1px;
+    letter-spacing: 2.1px; 
+    transition: background-color 0.5s ease;
 }
 
 .landing {
     grid-row: 1 / 2;
-    grid-column: span 3;
+    grid-column: span 5;
     display: flex;   
     justify-content: center;
     align-items: center;
 }
 
-.v2 {
+#v2 {
     grid-row: 2 / 3;
-    grid-column: span 3;
+    grid-column: 2 / 5;
+    padding-top: 5vh;
+    padding-bottom: 5vh;;
     display: flex;   
     justify-content: space-around;
     align-items: center; 
-    background-color: dodgerblue;   
+    background-color: #fee6e6;   
 }
 
-.v3 {
+#v3 {
     grid-row: 3 / 4;
-    grid-column: span 3;
+    grid-column: 2 / 5;
     display: flex;   
     justify-content: center;
-    align-items: center; 
-    background-color: coral;   
+    align-items: flex-start; 
+    background-color: #fee6e6;   
 }
 
-.v4 {
+#v4 {
     grid-row: 4 / 5;
     grid-column: span 3;
     display: flex;   
@@ -91,7 +94,7 @@ body {
     background-color: moccasin;   
 }
 
-.v5 {
+#v5 {
     grid-row: 5 / 6;
     grid-column: span 3;
     display: flex;   
@@ -129,19 +132,25 @@ body {
     /* text-align:  center; */
 }
 
+.bracket-image {
+    width: 30vw;
+    transform: rotate(270deg);
+    margin-top: 2vw;;
+}
+
 #bracket-left {
     animation-duration: 2s;
     animation-name: slidein-left;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    text-align: right;
+    text-align: left;
 }
 #bracket-right {
     animation-duration: 2s;
     animation-name: slidein-right;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    text-align: left;
+    text-align: right;
 }
 
 @keyframes slidein-left {
@@ -161,11 +170,20 @@ body {
 }
 
 #heading1 {
-    font-size: 10.2vw;
+    font-size: 15vw;
     font-weight: bold;
     text-align: center;
 }
 
 .heading1-wide {
     font-feature-settings: "salt";
+}
+
+
+.bg-transition {
+    background-color: black;   
+}
+
+.is-not-inview {
+    background-color: white;   
 }
