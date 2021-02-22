@@ -40,7 +40,7 @@ expandingLetters = setInterval(function() {
 // transition code
 function bgScroll() {
     var bodyEl = $('body');
-    inView.threshold(0.5);
+    inView.threshold(0.7);
     inView('.landing')
     .on('enter', function() {
         bodyEl.removeClass('bg-transition');
@@ -49,6 +49,13 @@ function bgScroll() {
         bodyEl.addClass('bg-transition');
     });
 }
+
+// paralax scroll
+$(window).scroll(function() {
+    var scrollTop = $(window).scrollTop();  
+    var evenImgPos = scrollTop / 2.5 + 'px';
+    $('.landing').css('transform', 'translateY(' + evenImgPos + ')');
+});
 
 // init all
 startAnimation();
