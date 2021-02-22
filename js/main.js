@@ -37,16 +37,31 @@ expandingLetters = setInterval(function() {
 }, 1000);
 }
 
-// transition code
+// transition bg colour code
 function bgScroll() {
     var bodyEl = $('body');
+    var linkEl = $('.links')
     inView.threshold(0.7);
+    if (!inView.is(document.querySelector('.landing'))) {
+        bodyEl.addClass('bg-transition');
+    };
     inView('.landing')
     .on('enter', function() {
         bodyEl.removeClass('bg-transition');
     })
     .on('exit', function() {
         bodyEl.addClass('bg-transition');
+    });
+    if (inView.is(document.querySelector('.links'))) {
+        console.log('hi');
+        linkEl.addClass('link-scroll');
+    };
+    inView('.links')
+    .on('enter', function() {
+        linkEl.addClass('link-scroll');
+    })
+    .on('exit', function() {
+        linkEl.removeClass('link-scroll');
     });
 }
 

@@ -126,7 +126,6 @@ body {
     display: grid;
     grid-template-columns: 10px 3fr 1fr 10px;
     padding-bottom: 20px;
-    background-color: white;   
 }
 
 #title-banner {
@@ -224,12 +223,18 @@ body {
     font-size: min(2vw, 10pt);
 }
 
-#links {
+.links {
     grid-column: 2 / 3;
     font-size: min(3vw, 23pt);
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
+    color: white;
+    transition: color 0.5s ease;
+}
+
+.link-scroll {
+    color: black;
 }
 
 .link-holder {
