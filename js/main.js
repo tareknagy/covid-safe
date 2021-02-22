@@ -41,12 +41,12 @@ expandingLetters = setInterval(function() {
 function bgScroll() {
     var bodyEl = $('body');
     inView.threshold(0.5);
-    inView('#v2')
+    inView('.landing')
     .on('enter', function() {
-        bodyEl.addClass('bg-transition');
+        bodyEl.removeClass('bg-transition');
     })
     .on('exit', function() {
-        bodyEl.removeClass('bg-transition');
+        bodyEl.addClass('bg-transition');
     });
 }
 
