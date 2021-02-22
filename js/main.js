@@ -76,7 +76,17 @@ $(document).ready(function() {
     }).mouseleave(function() {
         $img = $('#cursor-nez')
         $img.hide();
-    });
+    }).on({'touchstart' : function(e) {
+        $img = $('#cursor-nez')
+        $img.stop(1, 1).show();
+        $img.offset({
+            top: e.pageY + 20,
+            left: e.pageX - 30
+        });
+    }}).on({'end' : function(e) {
+        $img = $('#cursor-nez')
+        $img.hide();
+    }})
 });
 $(document).ready(function() {
     $('#hover-bouche').mousemove(function(e) {
