@@ -257,7 +257,6 @@ body {
     background-color: black;   
 }
 
-
 .brackets-bottom {
     font-size: min(7vw, 50pt);
     font-family: 'Telegraf';
@@ -296,4 +295,15 @@ body {
     }
     to {
     }
+}
+
+
+#hover-nez:hover {
+        cursor: pointer;
+}
+
+img.mouse-hovered {
+    display:none;
+    position: absolute;
+    max-height: 10vw;
 }
